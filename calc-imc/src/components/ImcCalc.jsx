@@ -2,7 +2,7 @@ import { useState } from 'react'
 import Button from './Button'
 import "../styles/ImcCalc.css"
 
-const ImcCalc = (calcImc) => {
+const ImcCalc = ({calcImc}) => {
     
     const [altura,setAltura] = useState("")
     const [peso,setPeso] = useState("")
