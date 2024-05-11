@@ -1,0 +1,51 @@
+#form-container{
+    text-align: center;
+    
+}
+#form-container h2{
+    font-size: 28px;
+}
+form{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    flex:1;
+    flex-direction: column;
+    
+}
+::-webkit-inner-spin-button{
+    display: none;
+}
+form label{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    text-align: left;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    
+}
+
+form label input{
+    display: flex;
+    flex:1;
+    padding:0.5rem 0.6rem;
+    border-radius: 5px;
+    background-color: #363636;
+    border-right: none;
+    color: white;
+    transition: all 0.5s;
+}
+
+form label input:focus{
+outline: none;
+background-color: #505050;
+border-bottom: 2px solid #A91D3A ;
+}
+.container-form-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}

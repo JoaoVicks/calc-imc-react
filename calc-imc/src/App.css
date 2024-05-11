@@ -1,0 +1,13 @@
+.container{
+    background-color: #222222;
+    color: white;
+    min-width: 400px;
+    min-height: 400px;
+    border-radius: 10px;
+    box-shadow: 17px 17px 40px #000000;
+    padding: 1.2rem;
+    transition: all 0.6s;
+}
+.container:hover{
+    scale: 1.060;
+}
