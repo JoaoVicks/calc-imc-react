@@ -8,7 +8,7 @@ const ImcCalc = ({calcImc}) => {
     const [peso,setPeso] = useState("")
     
     const validCaracteres = (text)=>{
-    return text.replace(/[A-Za-z.]/g,"");
+    return text.replace(/[A-Za-z]/g,"");
     }
 
     const handleAltura = (e) =>{
@@ -36,18 +36,18 @@ const ImcCalc = ({calcImc}) => {
             <form>
                 <label>
                     <span>Altura :</span>
-                    <input type="text" placeholder='digite sua altura' 
+                    <input type="text" placeholder='exemplo: 1,75' 
                     onChange={(e)=> handleAltura(e)} value={altura}/>
                 </label>
                 <label>
                     <span>Massa :</span>
-                    <input type="text" placeholder='digite seu peso' 
+                    <input type="text" placeholder='exemplo: 70' 
                     onChange={(e)=> handlePeso(e)} value={peso}/>
                 </label>
                 <div className="container-form-buttons">
 
                     <Button texto="Calcular" id="iCalcular" 
-                    action= {(e)=> calcImc(e,altura,peso)}
+                    action= {(e)=> calcImc(altura,peso)}
                     />
 
                     <Button texto="Limpar" id="iLimpar"  

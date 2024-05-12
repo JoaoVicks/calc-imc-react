@@ -1,7 +1,13 @@
 
-const ImcTable = () => {
+const ImcTable = ({imc}) => {
   return (
-    <div>ImcTable</div>
+    <>
+        <div>ImcTable</div>
+        <p>valor : {imc}</p>
+    </>
+
+
+    
   )
 }
 

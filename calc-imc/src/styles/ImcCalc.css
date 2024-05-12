@@ -40,7 +40,7 @@ form label input{
 form label input:focus{
 outline: none;
 background-color: #505050;
-border-bottom: 2px solid #A91D3A ;
+border-bottom: 2px solid white   ;
 }
 .container-form-buttons{
     display: flex;
