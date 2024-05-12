@@ -8,7 +8,7 @@ const ImcCalc = ({calcImc}) => {
     const [peso,setPeso] = useState("")
     
     const validCaracteres = (text)=>{
-    return text.replace(/[A-Za-z]/g,"");
+    return text.replace(/[A-Za-z.]/g,"");
     }
 
     const handleAltura = (e) =>{
